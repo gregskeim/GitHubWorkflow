@@ -1,2 +1,7 @@
 FROM alpine:3.10
-UN chmod +x entrypoint.sh
+
+COPY entrypoint.sh /entrypoint.sh
+
+RUN chmod +x entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
