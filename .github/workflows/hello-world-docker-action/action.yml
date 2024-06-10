@@ -12,7 +12,7 @@ inputs:
 # Define your outputs here.
 outputs:
   greeting:
-    description: {{  }}
+    description: 'hi xxx'
 
 runs:
   using: docker
