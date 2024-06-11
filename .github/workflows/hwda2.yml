@@ -2,7 +2,7 @@ name: HWDA CI
 on:
   push:
     branches: [ main ]
-    paths: [ hello-world-docker-action2/** ]
+    paths: [ ./hello-world-docker-action2/** ]
   workflow_dispatch:
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
 
       - name: Run my own container action
         id: hello-action
-        uses: ./hello-world-docker-action2/
+        uses: ./hello-world-docker-action2
         with:
           who-to-greet: '@wulfland'
 
